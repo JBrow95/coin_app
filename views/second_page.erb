@@ -20,7 +20,14 @@
 	</div>
 
 	<div class="box">
-		<p style="color: white;">you got back <%= result %>.</p>
+		<p style="color: white;"><%result.each_pair do |key, value| %>
+			<% if value > 1 && key == :penny %>
+			<%key = "pennies" %>
+			<% elsif value >1 %>
+			<%key = key.to_s + "s" %>
+			<%end%>
+			<%= value%> <%= key%><br>
+		 <% end%></p>
 	</div>
 
 </body>

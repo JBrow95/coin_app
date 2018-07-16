@@ -11,7 +11,7 @@ post '/change' do
 	amount = params[:amount].to_i
 	# p "this is amount #{amount}"
 	# p "this is amount #{amount.class}"
-	session[:result] = changer(amount).to_s
+	session[:result] = changer(amount)
 	redirect '/second_page'
 end
 
