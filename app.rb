@@ -16,7 +16,6 @@ post '/change' do
 end
 
 get '/second_page' do
-	amount = params[:amount]
-	session[:result]
-	erb :second_page, locals:{amount: amount, result: session[:result]}
+
+	erb :second_page, locals:{result: session[:result]}
 end
