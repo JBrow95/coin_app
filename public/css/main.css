@@ -9,6 +9,14 @@ body {
 	width: 100vw;
 }
 
+#random {
+	height: 100vh;
+	width: 100vw;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("https://images.pexels.com/photos/375732/pexels-photo-375732.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940");
+}
+
 
 .box {
 	position: absolute;
@@ -140,5 +148,13 @@ input[type=number]::-webkit-outer-spin-button {
 	margin: 0;
 	padding: 0px;
 
+}
+
+.time {
+	color: white;
+}
+
+.box h2 {
+	text-align: center;
 }
 

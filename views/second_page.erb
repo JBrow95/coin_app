@@ -15,11 +15,14 @@
 </head>
 
 <body>
+
+	<div id="random" ></div> 
 	<div class="nav">
 		<a href="/">Home</a>
 	</div>
 
 	<div class="box">
+		<h2 class="time" id="showTime"></h2>
 		<p style="color: white;"><%result.each_pair do |key, value| %>
 			<% if value > 1 && key == :penny %>
 			<%key = "pennies" %>
